@@ -3,10 +3,24 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Picture of the Day</title>
   </head>
   <body>
-    
+    <b>API URL:</b>
+    <button type="submit" name="button">Submit</button>
+  <pre id="reqObject"></pre>
+  
+  
+  <img id="apod_img_id" width="250px"/>
+  
+  <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+  <p id="copyright"></p>
+  
+  <h3 id="apod_title"></h3>
+  <p id="apod_explaination"></p>
+  <pre id="returnObject"></pre>
   </body>
 </html>
