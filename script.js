@@ -26,4 +26,15 @@ $.ajax({
   $("#apod_title").text(result.title);
 }
 });
+
+$("#weatherButton").click(function(e){
+  console.log(url);
+  e.preventDefault();
+})
+$('input').dcalendarpicker(
+  {
+    format: 'yyyy-mm-dd'
+  }
+);
+
 });
