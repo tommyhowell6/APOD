@@ -60,6 +60,7 @@ $("#demo").dcalendarpicker(
         }
         $("#reqObject").text(url);
         // $("#returnObject").text(JSON.stringify(result, null, 4));  
+        $("#apod_date").text(result.date);  
         $("#apod_explaination").text(result.explanation);
         $("#apod_title").text(result.title);
       }

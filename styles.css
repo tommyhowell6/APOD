@@ -10,3 +10,14 @@
   display: flex;
   flex-direction: row;
 }
+.header {
+  display: flex;
+  justify-content: center;
+  font: Monospace;
+  font-size: 25pt;
+  background-color: black;
+  color: white;
+}
+.padding{
+  padding: 5px;
+}
