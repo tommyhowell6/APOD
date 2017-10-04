@@ -10,20 +10,24 @@
     <title>Picture of the Day</title>
   </head>
   <body>
-    <div>
+    <div class="center column">
+    <div class="center">
+      <b>Enter a date</b>
       <input class="form-control" id="demo" type="text">
     </div>
-    <input id="submitButton" type="submit" value="Submit">        
+    <b class="center">Favorite Dates</b>
+    <div class="center">
+      <button type="button" name="button">2016-8-28</button>
+      <button type="button" name="button">2016-8-28</button>      
+    </div>
+    </div>    
         
     <center><h2 id="apod_title"></h2><center>
+      <p id="apod_date"></p>
     <img id="apod_img_id" width="800px" /></img>
-        
     <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe> 
-  
-  
   <p id="copyright"></p>
   
-  <h3 id="apod_title"></h3>
   <p id="apod_explaination"></p>
   <pre id="returnObject"></pre>
   </body>
