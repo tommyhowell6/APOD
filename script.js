@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
 var url = "https://api.nasa.gov/planetary/apod?api_key=AcFc5Ztx2UpVK9YSh1jkM9iuvvSRCWwLEW9O90RB";
-// &date=1998-08-28
+
 $.ajax({
   url: url,
   success: function(result){
@@ -27,11 +27,14 @@ $.ajax({
 }
 });
 
-$("#weatherButton").click(function(e){
-  console.log(url);
+$("#submitButton").click(function(e){
+  var url = "https://api.nasa.gov/planetary/apod?api_key=AcFc5Ztx2UpVK9YSh1jkM9iuvvSRCWwLEW9O90RB";
+  url = url + "&date=";
+  var date = $("demo").val();
+  console.log(date);
   e.preventDefault();
 })
-$('input').dcalendarpicker(
+$("#demo").dcalendarpicker(
   {
     format: 'yyyy-mm-dd'
   }
