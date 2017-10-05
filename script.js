@@ -11,7 +11,17 @@ $.ajax({
   else {
     $("#copyright").text("Image Credits: " + "Public Domain");
   }
- $("#apod_vid_id").attr("src", result.url); 
+if(result.media_type == "video") {
+                                                       $("#apod_vid_id").css("display","");
+                                                       $("#apod_img_id").css("display", "none");
+                                                       $("#apod_vid_id").attr("src", result.url);
+                                                       }
+                                                       else {
+                                                       $("#apod_img_id").css("display", "");
+                                                       $("#apod_vid_id").css("display", "none");
+                                                       $("#apod_img_id").attr("src", result.url);
+                                                       }
+
   $("#reqObject").text(url);
   // $("#returnObject").text(JSON.stringify(result, null, 4));
   $("#apod_date").text(result.date);  
@@ -41,7 +51,17 @@ $("#button1, #button2").click(function () {
                                              else {
                                              $("#copyright").text("Image Credits: " + "Public Domain");
                                              }
-                                             $("#apod_vid_id").attr("src", result.url);
+					     if(result.media_type == "video") {
+                                                  $("#apod_vid_id").css("display","");
+                                                  $("#apod_img_id").css("display", "none");
+                                                  $("#apod_vid_id").attr("src", result.url);
+                                                       }
+                                             else {
+                                                  $("#apod_img_id").css("display", "");
+                                                  $("#apod_vid_id").css("display", "none");
+                                                  $("#apod_img_id").attr("src", result.url);
+                                                       }
+
                                              $("#reqObject").text(url);
                                              // $("#returnObject").text(JSON.stringify(result, null, 4));
                                              $("#apod_date").text(result.date);
@@ -69,7 +89,17 @@ $("#demo").dcalendarpicker(
         else {
           $("#copyright").text("Image Credits: " + "Public Domain");
         }
-       $("#apod_vid_id").attr("src", result.url); 
+	if(result.media_type == "video") {
+                                                       $("#apod_vid_id").css("display","");
+                                                       $("#apod_img_id").css("display", "none");
+                                                       $("#apod_vid_id").attr("src", result.url);
+                                                       }
+                                                       else {
+                                                       $("#apod_img_id").css("display", "");
+                                                       $("#apod_vid_id").css("display", "none");
+                                                       $("#apod_img_id").attr("src", result.url);
+                                                       }
+
         $("#reqObject").text(url);
         // $("#returnObject").text(JSON.stringify(result, null, 4)); 
 	$("#apod_date").text(result.date); 
