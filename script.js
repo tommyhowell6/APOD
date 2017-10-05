@@ -95,13 +95,9 @@ $("#demo").dcalendarpicker(
           $("#apod_img_id").attr("src", result.url);
         }
         $("#reqObject").text(url);
-<<<<<<< HEAD
         // $("#returnObject").text(JSON.stringify(result, null, 4)); 
 	$("#apod_date").text(result.date); 
-=======
-        // $("#returnObject").text(JSON.stringify(result, null, 4));  
-        $("#apod_date").text(result.date);  
->>>>>>> bce68c4d4f0e32c671d27ef1ad1ec0a12d3a9ec9
+        // $("#returnObject").text(JSON.stringify(result, null, 4));   
         $("#apod_explaination").text(result.explanation);
         $("#apod_title").text(result.title);
       }
