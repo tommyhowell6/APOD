@@ -41,7 +41,7 @@ $(document).ready(function() {
                   $("#button1, #button2").click(function () {
                                                 
                                                 if (this.id == "button1") {
-                                                url="https://api.nasa.gov/planetary/apod?api_key=AcFc5Ztx2UpVK9YSh1jkM9iuvvSRCWwLEW9O90RB&date=2011-01-28";                         }
+                                                url="https://api.nasa.gov/planetary/apod?api_key=AcFc5Ztx2UpVK9YSh1jkM9iuvvSRCWwLEW9O90RB&date=2011-07-26";                         }
                                                 else if (this.id == "button2"   ) {
                                                 url="https://api.nasa.gov/planetary/apod?api_key=AcFc5Ztx2UpVK9YSh1jkM9iuvvSRCWwLEW9O90RB&date=2017-08-21";
                                                 }
